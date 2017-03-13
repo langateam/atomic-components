@@ -27,6 +27,14 @@ module.exports = [
 
   {
     method: 'GET',
+    path: '/form.min.js',
+    handler: {
+      file: 'dist/form.min.js'
+    }
+  },
+
+  {
+    method: 'GET',
     path: '/robots.txt',
     handler: {
       file: 'assets/robots.txt'

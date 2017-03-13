@@ -42,6 +42,7 @@ export default class IndexPage extends Component {
           <script id="app-state"
               dangerouslySetInnerHTML={{ __html: this.props.state }}>
           </script>
+          <script src="/form.min.js" />
         </body>
       </html>
     )
