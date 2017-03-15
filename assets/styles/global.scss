@@ -49,10 +49,13 @@ a {
   flex: 1;
 }
 .flexMiddle {
-  min-width: 750px;
-  max-width: 750px;
+  width: 750px;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .Container {
