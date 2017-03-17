@@ -22,6 +22,7 @@ export default class IndexPage extends Component {
           <link rel="stylesheet" href="/style/global.css" />
           <link rel="stylesheet" href="https://cdn.langa.io/art/misc/fontello/css/fontello.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
           <link rel="author" href="https://plus.google.com/108812193853051708628" />
           <link ref="publisher" href="https://plus.google.com/108812193853051708628" />

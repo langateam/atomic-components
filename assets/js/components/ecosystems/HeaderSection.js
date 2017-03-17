@@ -28,6 +28,16 @@ export default class Header extends Component {
         {this.renderContactHeader()}
 
         <div className="navbar">
+          <i className="hamburger fa fa-bars"></i>
+          <a className="navlink" href="/">Home</a>
+          <a className="navlink" href="/services/node-js-development">Backend</a>
+          <a className="navlink" href="/services/front-end-development">Frontend</a>
+          <a className="navlink" href="/services/design">Design</a>
+          <a className="navlink" href="/opensource">Open Source</a>
+          <a className="navlink" href="/contact">Contact Us</a>
+        </div>
+
+        <div className="navbar-mobile">
           <a className="navlink" href="/">Home</a>
           <a className="navlink" href="/services/node-js-development">Backend</a>
           <a className="navlink" href="/services/front-end-development">Frontend</a>
