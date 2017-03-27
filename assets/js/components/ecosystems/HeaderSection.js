@@ -46,6 +46,7 @@ export default class Header extends Component {
         </div>
 
 
+        {this.state.modalDisplay ?
           <div className="navbar-mobile">
             <i onClick={this.toggleModalDisplay} className="hamburger fa fa-times"></i>
             <a className="navlink" href="/">Home</a>
@@ -55,10 +56,12 @@ export default class Header extends Component {
             <a className="navlink" href="/opensource">Open Source</a>
             <a className="navlink" href="/contact">Contact Us</a>
           </div>
+          : null}
 
         <div className="banner">
           <div className="flexLeft" />
           <div className="flexMiddle mainContent">
+            <img className="logo logo-mobile" src="//cdn.langa.io/art/logos/Langa%20Identity.svg" />
             <img className="logo" src="//cdn.langa.io/art/logos/logomain.svg" />
             <img className="skyline" src="//cdn.langa.io/art/backgrounds/skyline.svg" />
           </div>

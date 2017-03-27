@@ -124,9 +124,17 @@
       @media (min-width: 768px) {
         height: 96px;
         margin-top: 2em;
+
+        &.logo-mobile {
+          display: none;
+        }
       }
 
       @media (max-width: 768px) {
+        &.logo-mobile {
+          display: block;
+        }
+        display: none;
         margin-bottom: 5vw;
       }
     }
