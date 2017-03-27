@@ -63,8 +63,9 @@
 
   .navbar-mobile {
     width: 100%;
-    height: 100%;
+    height: 125%;
     position: absolute;
+    top: 0;
     @media (min-width: 768px) {
       display: none;
     }
@@ -72,6 +73,20 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+
+    .hamburger {
+      width: 25px;
+      height: 25px;
+      font-size: 2em;
+      margin-right: .5em;
+      margin-bottom: .5em;
+      margin-top: .75em;
+      color: white;
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
     .navlink {
       color: white;

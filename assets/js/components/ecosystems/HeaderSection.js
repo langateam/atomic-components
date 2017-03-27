@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 
 export default class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {modalDisplay: false}
+  }
 
   static get propTypes () {
     return {
       query: React.PropTypes.object
     }
+  }
+
+  toggleModalDisplay() {
+    this.setState({modalDisplay: !this.state.modalDisplay})
   }
 
   renderContactHeader () {
@@ -28,7 +36,7 @@ export default class Header extends Component {
         {this.renderContactHeader()}
 
         <div className="navbar">
-          <i className="hamburger fa fa-bars"></i>
+          <i onClick={this.toggleModalDisplay} className="hamburger fa fa-bars"></i>
           <a className="navlink" href="/">Home</a>
           <a className="navlink" href="/services/node-js-development">Backend</a>
           <a className="navlink" href="/services/front-end-development">Frontend</a>
@@ -37,14 +45,16 @@ export default class Header extends Component {
           <a className="navlink" href="/contact">Contact Us</a>
         </div>
 
-        <div className="navbar-mobile">
-          <a className="navlink" href="/">Home</a>
-          <a className="navlink" href="/services/node-js-development">Backend</a>
-          <a className="navlink" href="/services/front-end-development">Frontend</a>
-          <a className="navlink" href="/services/design">Design</a>
-          <a className="navlink" href="/opensource">Open Source</a>
-          <a className="navlink" href="/contact">Contact Us</a>
-        </div>
+
+          <div className="navbar-mobile">
+            <i onClick={this.toggleModalDisplay} className="hamburger fa fa-times"></i>
+            <a className="navlink" href="/">Home</a>
+            <a className="navlink" href="/services/node-js-development">Backend</a>
+            <a className="navlink" href="/services/front-end-development">Frontend</a>
+            <a className="navlink" href="/services/design">Design</a>
+            <a className="navlink" href="/opensource">Open Source</a>
+            <a className="navlink" href="/contact">Contact Us</a>
+          </div>
 
         <div className="banner">
           <div className="flexLeft" />
