@@ -141,6 +141,16 @@
         display: none;
         margin-bottom: 5vw;
       }
+
+      @media (max-width: 500px) {
+        &.logo-mobile {
+          position: absolute;
+          top: 25vw;
+          margin: auto;
+          width: 200px;
+          display: block;
+        }
+      }
     }
 
     .skyline {
